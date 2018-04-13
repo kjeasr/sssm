@@ -27,3 +27,9 @@ general calculations
 ```
 sssm/services
 ```
+
+How to use
+========================
+First create stock instance and then register it at store.
+Store also has methods to do register sales, purchases and dividend registrations that are later used in services.
+Modules in services provide calculation functions.

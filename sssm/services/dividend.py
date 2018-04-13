@@ -9,7 +9,6 @@ def dividend_yield(stock, price=None):
         price = stock.price
     if isinstance(stock, CommonStock):
         return last_dividend.last_dividend / price
-    assert isinstance(stock, PreferredStock)
     if isinstance(stock, PreferredStock):
         return (last_dividend.fixed_dividend * last_dividend.par_value) / price
 
